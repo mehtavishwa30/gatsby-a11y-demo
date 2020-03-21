@@ -10,7 +10,7 @@ This is a simple demo app built with Gatsby to understand how to adopt and inclu
 
 2. **Run the app in development mode**
 
-    Navigate into your new site’s directory, install dependencies, and start it up!
+    Navigate into the project's directory, install dependencies, and start it up!
 
     ```shell
     cd gatsby-a11y-demo
@@ -21,24 +21,6 @@ This is a simple demo app built with Gatsby to understand how to adopt and inclu
 3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`! Get your hands dirty and have fun! 
-
-## 🔎 What's inside?
-
-A quick run-through of the files and directories you will find in this app.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
 
 ## 💻 Exercise!
 
