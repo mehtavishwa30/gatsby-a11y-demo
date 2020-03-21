@@ -86,7 +86,7 @@ function Layout({ children }) {
           </button>
           {SignupForm}
         </Modal>
-      </button>
+      </div>
     )
 }
 
