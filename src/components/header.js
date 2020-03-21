@@ -8,7 +8,6 @@ const Header = ({ siteTitle, showModal }) => (
       className="signup-btn"
       onClick={showModal.bind(this)}
       aria-label="Open weekly summary sign-up">
-      onClick={showModal.bind(this)}>
       <i className="fa fa-newspaper-o"></i>
     </button>
     <h1 className="App-title">
