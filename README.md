@@ -49,15 +49,16 @@ In order to switch branches and run the app, run the following commands:
 - `git checkout a11y-fixes`
 - `gatsby develop`
 
-Awesome! I'd love to hear your thoughts on what you observed. DMs open [@vishwamehta30]().
+Awesome! I'd love to hear your thoughts on what you observed. DMs open [@vishwamehta30](https://twitter.com/VishwaMehta30).
 
 ## 🧠 Additional A11Y resources
 
 I always come bearing gifts! Here are some awesome a11y resources I learned from and personally love. Have fun, folks!
 
--
--
--
--
--
+- [The offcial React Accessibility docs](https://reactjs.org/docs/accessibility.html)
+- [The awesome React A11Y resources](https://reactresources.com/topics/accessibility)
+- [A11Y tips by Neha Sharma](https://www.a11ytips.dev/)
+- [Web a11y resources by Marcy Sutton](https://marcysutton.com/web-accessibility-resources)
+- [Cutest a11y video ever!](https://www.youtube.com/watch?v=HE2R86EZPMA)
+- [A11ycasts with Rob Dodson](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
