@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { useState } from "react"
+import React, { useState, , useRef } from "react"
 import PropTypes from "prop-types"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Modal from "react-modal"
@@ -13,6 +13,8 @@ import Modal from "react-modal"
 import Header from "./header"
 import SignupForm from "./signup-form"
 import "./layout.css"
+
+Modal.setAppElement('#___gatsby');
 
 let modalStyles = {
   overlay : {
@@ -22,6 +24,8 @@ let modalStyles = {
 }
 function Layout({ children }) {
     const [state, setState] = useState({ modalOpen: false, menuOpen: false })
+    const mainRef = useRef(null)
+    const firstItemRef = useRef(null)
 
     const data = useStaticQuery(graphql`
       query SiteTitleQuery {
@@ -33,6 +37,18 @@ function Layout({ children }) {
         }
       }
     `)
+    
+    const isMenuOpen = (state) => {
+      if (state.isOpen) {
+        firstItemRef.current.focus()
+      }
+    }
+    const pageFocus = () => {
+      setState({menuOpen: false})
+      // this needs to be converted to useEffect
+      mainRef.current.focus()
+    }
+    
     const onUpdate = (modalOpen) => {
       setState({modalOpen})
     }
@@ -51,7 +67,9 @@ function Layout({ children }) {
               paddingTop: 0,
             }}
           >
-            <div className="main-content">{children}</div>
+            <main ref={mainRef} tabIndex="-1" className="main-content">
+              {children}
+            </main>
           </div>
         </div>
         <Modal
@@ -60,14 +78,15 @@ function Layout({ children }) {
           className="modal"
           style={modalStyles}
         >
-          <div 
+          <button 
             className="close-btn"
-            onClick={onUpdate.bind(this, false)}>
+            onClick={onUpdate.bind(this, false)}
+            aria-label="Close newsletter signup">
             X
           </div>
           {SignupForm}
         </Modal>
-      </div>
+      </button>
     )
 }
 
