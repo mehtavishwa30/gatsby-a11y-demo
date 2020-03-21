@@ -13,7 +13,7 @@ const Header = ({ siteTitle, showModal }) => (
       <Link
         to="/"
         style={{
-          color: `white`,
+          color: #333,
           textDecoration: `none`,
         }}
       >
