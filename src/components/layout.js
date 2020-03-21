@@ -81,9 +81,9 @@ function Layout({ children }) {
           <button 
             className="close-btn"
             onClick={onUpdate.bind(this, false)}
-            aria-label="Close newsletter signup">
+            aria-label="Close weekly summary signup">
             X
-          </div>
+          </button>
           {SignupForm}
         </Modal>
       </button>
