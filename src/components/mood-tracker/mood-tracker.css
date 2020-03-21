@@ -24,13 +24,13 @@
     margin-left: 1em;
     margin-bottom: 1em;
   }
-  #moodTracker div.label.fit {
+  #moodTracker .label.fit {
     flex-grow: 2;
     margin: 0;
     padding: 1em;
     width: 40%;
   }
-  #moodTracker div.label.fit input,
+  #moodTracker .label.fit input,
   #moodTracker .button-wrap button {
     border: 1px solid #666;
   }
@@ -40,7 +40,7 @@
     border: none;
     color: #fff;
   }
-  #moodTracker div.label input {
+  #moodTracker .label input {
     border: 0;
     height: 32px;
     padding: 0.25em;
@@ -67,7 +67,7 @@
     height: 100%;
     width: 100%;
   }
-  #moodTracker .inputGroup div.label {
+  #moodTracker .inputGroup .label {
     flex-grow: 2;
   }
   #moodTracker .inputGroup input {
