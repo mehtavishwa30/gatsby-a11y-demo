@@ -38,6 +38,7 @@ function MoodTracker() {
                   <i className="fa fa-caret-left"></i>
                 </button>
                 <label className="label">
+                  <span className="visuallyhidden">Type the date of your mood entry</span>
                   <input type="text" placeholder="21.03.20" name="date" />
                 </label>
                 <button type="button">
