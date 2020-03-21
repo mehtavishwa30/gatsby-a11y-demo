@@ -4,16 +4,18 @@ import React from "react"
 
 const Header = ({ siteTitle, showModal }) => (
   <header>
-    <div
+    <button
       className="signup-btn"
+      onClick={showModal.bind(this)}
+      aria-label="Open weekly summary sign-up">
       onClick={showModal.bind(this)}>
       <i className="fa fa-newspaper-o"></i>
-    </div>
+    </button>
     <h1 className="App-title">
       <Link
         to="/"
         style={{
-          color: `white`,
+          color: `#333`,
           textDecoration: `none`,
         }}
       >
