@@ -48,6 +48,7 @@ function MoodTracker() {
               </div>
               <div className="button-wrap right">
                 <button type="button">
+                  <span className="visuallyhidden">Select a date from the calendar icon</span>
                   <i className="fa fa-calendar"></i>
                 </button>
               </div>
