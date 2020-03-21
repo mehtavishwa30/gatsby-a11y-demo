@@ -24,8 +24,8 @@ header h1 {
     margin: 1.5em 0;
 }
 a {
-  color: #999;
-  text-decoration: none;
+  color: inherit;
+  text-decoration: underline;
   font-weight: bold;
 }
 a:hover,
